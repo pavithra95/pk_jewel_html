@@ -1,0 +1,375 @@
+body {
+        margin: 0;
+         background-color: #e9e4db;
+            font-family: 'Georgia', serif;
+      
+    }
+
+    .custom-navbar {
+        background-color:rgba(79, 3, 3, 0.87); /* maroon */
+        padding: 15px 40px;
+    }
+
+    .navbar-brand img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nav-link {
+        color: #fff !important;
+        margin: 0 20px;
+        font-size: 18px;
+    }
+
+    .nav-link.active {
+        color: #f4c27a !important; /* gold */
+        font-weight: 500;
+    }
+
+    .nav-link:hover {
+        color: #f4c27a !important;
+    }
+
+    /* bottom light gold line */
+    .bottom-line {
+        height: 5px;
+        background: linear-gradient(to right, #c08a5d, #f4c27a);
+    }
+
+
+/* About Banner */
+.about-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('images/about_banner.webp') no-repeat center right/cover;
+}
+
+/* Left fade effect */
+.about-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    /* background: linear-gradient(to right, #e9e6dd 70%, rgba(233,230,221,0)); */
+}
+
+/* Text */
+.about-overlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.about-overlay h1 {
+    color: #6b2b2b;
+    font-size: 48px;
+    font-family: Georgia, serif;
+    letter-spacing: 2px;
+}
+
+
+.collection-section {
+    /* background-color: #e9e4db; */
+    padding: 60px 0;
+    font-family: 'Georgia', serif;
+}
+
+.collection-title {
+    font-size: 42px;
+    color: #6b1d1d;
+    margin-bottom: 25px;
+}
+
+.collection-text {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Image Frame */
+.image-frame {
+    position: relative;
+    padding: 15px;
+    display: inline-block;
+}
+
+.image-frame img {
+    width: 100%;
+    max-width: 480px;
+    display: block;
+}
+
+/* Double border effect */
+.image-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border: 2px solid #caa35c; */
+}
+
+.image-frame::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    /* border: 2px solid #caa35c; */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .collection-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .collection-text {
+        text-align: left;
+    }
+
+    .image-frame img {
+        max-width: 100%;
+    }
+}
+
+
+
+/* Welcome section */
+.welcome-section {
+    padding: 60px 20px 20px;
+}
+
+.welcome-title {
+    color: #6b2b2b;
+    font-size: 48px;
+    font-family: Georgia, serif;
+}
+
+.welcome-text {
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 17px;
+    font-family: "Helvetica", Sans-serif;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Work Section */
+.work-section {
+    /* background-color: #e9e6dd; */
+    padding: 60px 20px;
+}
+
+/* Title */
+.work-title {
+    color: #6b2b2b;
+    font-size: 42px;
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.work-text {
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.work-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #d8cfc4;
+    padding: 6px;
+    transition: 0.3s;
+}
+
+.work-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.work-card:hover {
+    transform: scale(1.05);
+}
+
+/* View More */
+.view-more {
+    font-size: 20px;
+    color: #6b2b2b;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.view-more:hover {
+    color: #4a1d1d;
+}
+
+
+  .title {
+        text-align: center;
+        margin: 40px 0 20px;
+        color: #5a1e1e;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .table-container {
+        border: 3px solid #7a2c2c;
+        padding: 5px;
+        width: 85%;
+        margin: auto;
+        background-color: #d9d6cc;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        color: #5a1e1e;
+        font-size: 18px;
+          background-color: #f5efe6; 
+        /* background-color: aqua; */
+    }
+
+    td {
+        border: 1px solid;
+        padding: 20px 10px;
+        vertical-align: middle;
+    }
+
+    tr:nth-child(even) td {
+        background-color: #f2e9dc; 
+        border: 1px solid;
+    }
+
+    tr:nth-child(odd) td {
+        background-color: #e9dfcf; 
+        border: 1px solid;
+    }
+   
+
+
+.site-footer {
+  background-color: #5c1f1b; /* Deep burgundy background */
+  color: #ffffff;
+  padding: 60px 20px 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Typography */
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-column p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Logo & Socials */
+.footer-logo {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+/* Navigation Links */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Contact Specifics */
+.contact p i {
+  margin-right: 10px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.back-to-top {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #007bff; /* Blue button from image */
+  color: white;
+  padding: 10px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: left;
+  }
+}

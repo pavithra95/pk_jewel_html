@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
+
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" style="height:50px;">
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+    <section class="contact-section">
+    <div class="container">
+
+        <h2 class="contact-title">Contact us</h2>
+
+        <p class="contact-text">
+            Get in Touch Discover the perfect jewelry box and Drawstring pouch for your needs 
+            or discuss custom design options with our team. We have more than 1000 varieties 
+            of Jewel boxes and 20 + varities of Pouches. Contact us today for your needs !
+        </p>
+
+        <p class="contact-text mt-3">
+            <strong>Email:</strong> 
+            <a href="mailto:packmyjewels@gmail.com" style = "text-decoration: none;">packmyjewels@gmail.com</a> 
+            &nbsp;&nbsp;
+            <strong>Phone:</strong> 6382085530.
+        </p>
+
+    </div>
+</section>
+
+
+
+<div class="container my-5">
+    <div class="form-wrapper">
+        <div class="row">
+
+            <!-- LEFT FORM -->
+            <div class="col-md-7">
+                <form id="enquiryForm">
+
+                    <div class="mb-4">
+                        <label>Name <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Full Name">
+                    </div>
+
+                    <div class="mb-4">
+                        <label>Email <span>*</span></label>
+                        <input type="email" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label>Product Type <span>*</span></label>
+                        <select class="form-select">
+                            <option>--- Select Choice ---</option>
+                            <option>Jewellery Box</option>
+                            <option>Jewellery Pouch</option>
+                            
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label>Quantity</label>
+                        <input type="number" class="form-control quantity" value="1">
+                    </div>
+
+                    <div class="mb-4">
+                        <label>Requirements / Message</label>
+                        <textarea class="form-control" rows="5" placeholder="Type here...."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success submit-btn ">
+                        Submit Enquiry
+                    </button>
+
+                </form>
+            </div>
+
+            <!-- Success Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+
+      <h4 class="mb-3">Thank You!</h4>
+      <p>Your enquiry has been submitted successfully.</p>
+
+      <button type="button" class="btn btn-success mt-3" data-bs-dismiss="modal">
+        OK
+      </button>
+
+    </div>
+  </div>
+</div>
+
+            <!-- RIGHT CONTACT CARD -->
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="contact-card text-center">
+
+                    <h3>Contact Details</h3>
+                    <p class="company">Athira Enterprises</p>
+
+                    <p>📞 6382085530.</p>
+                    <p>✉️ <a href="#">packmyjewels@gmail.com</a></p>
+
+                    <p class="address">
+                        📍 1/214,<br>
+                        Eramangalam,<br>
+                        Nochully, Palakkad-<br>
+                        678702, Kerala, India
+                    </p>
+
+                    <a href="#" class="btn insta-btn">
+                        📷 View Instagram Page
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <div class="footer-column branding">
+      <img src="images/logo.png" alt="Athira Enterprises Logo" class="footer-logo">
+      <p>Athira Enterprises, established in 1997, we specialize in crafting premium net drawstring and elegant pouch solutions with dedication and excellence.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column links">
+      <h3>Pages</h3>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column contact">
+      <h3>Contact us</h3>
+      <p><i class="fas fa-phone"></i> 6382085530</p>
+      <p><i class="fas fa-envelope"></i> packmyjewels@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> 1/214, Eramangalam, Nochully, <br> Palakkad-678702, Kerala, India</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2026 | All Right Reserved</p>
+    <a href="#top" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+  </div>
+</footer>
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop page reload
+
+    // Show modal
+    var myModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+    myModal.show();
+
+    // Optional: reset form
+    this.reset();
+});
+</script>
+</body>
+</html>

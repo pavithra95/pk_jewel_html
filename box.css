@@ -1,0 +1,290 @@
+ body {
+        margin: 0;
+         /* background-color: #e9e4db; */
+            font-family: 'Georgia', serif;
+      
+    }
+
+    .custom-navbar {
+        background-color:rgba(79, 3, 3, 0.87); /* maroon */
+        padding: 15px 40px;
+    }
+
+    .navbar-brand img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nav-link {
+        color: #fff !important;
+        margin: 0 20px;
+        font-size: 18px;
+    }
+
+    .nav-link.active {
+        color: #f4c27a !important; /* gold */
+        font-weight: 500;
+    }
+
+    .nav-link:hover {
+        color: #f4c27a !important;
+    }
+
+    /* bottom light gold line */
+    .bottom-line {
+        height: 5px;
+        background: linear-gradient(to right, #c08a5d, #f4c27a);
+    }
+
+
+    body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    /* background-color: #d9d6cc; */
+}
+
+/* Section */
+.pouch-section {
+    /* background-color: #d9d6cc; */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Title */
+.pouch-title {
+    color: #5a1e1e;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.pouch-text {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    color: #2d2d2d;
+    line-height: 1.8;
+}
+
+
+
+
+/* Section */
+.potli-section {
+    padding: 60px 20px;
+}
+
+/* Heading */
+.left-content h2 {
+    color: #5a1e1e;
+    margin-bottom: 20px;
+}
+
+/* Text */
+.left-content p {
+    color: #2d2d2d;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Image */
+.potli-img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Animations */
+.animate-left {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 1s ease;
+}
+
+.animate-right {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 1s ease;
+}
+
+/* When visible */
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+/* .gallery-section {
+  background-color: #e8e5dc;
+} */
+
+.gallery-card {
+  background: #c98f74;
+  border: 3px solid #8a5a3a;
+  padding: 4px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Hover Zoom In Zoom Out */
+.gallery-card:hover img {
+  animation: zoomInOut 0.8s ease-in-out;
+  transform: scale(1.08);
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+/* Optional hover card effect */
+.gallery-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Responsive image heights */
+@media (max-width: 992px) {
+  .gallery-card img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-card img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-card img {
+    height: 120px;
+  }
+}
+
+
+
+
+
+.site-footer {
+  background-color: #5c1f1b; /* Deep burgundy background */
+  color: #ffffff;
+  padding: 60px 20px 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Typography */
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-column p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Logo & Socials */
+.footer-logo {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+/* Navigation Links */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Contact Specifics */
+.contact p i {
+  margin-right: 10px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.back-to-top {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #007bff; /* Blue button from image */
+  color: white;
+  padding: 10px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: left;
+  }
+}
